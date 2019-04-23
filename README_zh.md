@@ -39,7 +39,7 @@ GET	| /statistics/demo	| Get demo account statistics	|   | ×
 PUT	| /statistics/{account}	| Create or update time series datapoint for specified account	|   | 
 
 
-#### 通知服务
+#### 通知服务   
 保存用户联系信息和通知设置(例如提醒和备份频率)
 定时从其他服务收集信息,并向订阅用户发送邮件
 
