@@ -20,11 +20,11 @@
 
 方法	| 路由	| 描述	| 用户授权	| UI访问权限
 ------------- | ------------------------- | ------------- |:-------------:|:----------------:|
-GET	| /accounts/{account}	| 获取指定账户信息	| ✓ | ✓	
+GET	| /accounts/{account}	| 获取指定账户信息	| 对 | 	
 GET	| /accounts/current	| 获取当前账户信息 | × | ×
-GET	| /accounts/demo	| 获取demo账户信息(预置用户收入/支出信息) |  ✓ | 	×
+GET	| /accounts/demo	| 获取demo账户信息(预置用户收入/支出信息) |   | 	×
 PUT	| /accounts/current	| 保存当前账户信息	| × | ×
-POST | /accounts/	| 注册一个新账户	| ✓  | ×
+POST | /accounts/	| 注册一个新账户	|   | ×
 
 
 #### 静态数据服务
@@ -33,10 +33,10 @@ POST | /accounts/	| 注册一个新账户	| ✓  | ×
 
 Method	| Path	| Description	| User authenticated	| Available from UI
 ------------- | ------------------------- | ------------- |:-------------:|:----------------:|
-GET	| /statistics/{account}	| Get specified account statistics	          | ✓ | 	✓
+GET	| /statistics/{account}	| Get specified account statistics	          |  | 	
 GET	| /statistics/current	| Get current account statistics	| × | × 
-GET	| /statistics/demo	| Get demo account statistics	| ✓  | × 
-PUT	| /statistics/{account}	| Create or update time series datapoint for specified account	|  ✓ | ✓
+GET	| /statistics/demo	| Get demo account statistics	|   | × 
+PUT	| /statistics/{account}	| Create or update time series datapoint for specified account	|   | 
 
 
 #### 通知服务   

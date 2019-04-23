@@ -1,0 +1,31 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'com.piggymetrics'
+version = '1.0-SNAPSHOT'
+  gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+      options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    }
+  }
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 11
+  targetCompatibility = 11
+  tasks.withType(JavaCompile) {
+  	options.encoding = 'UTF-8'
+  }
+
+  
+  repositories {
+    mavenLocal()
+    
+    maven { url "https://repo.maven.apache.org/maven2" }
+  }
+
+  
+  
+  
+}

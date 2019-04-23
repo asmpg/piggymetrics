@@ -1,0 +1,7 @@
+
+description = 'registry'
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-server', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version:'2.0.0.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.0.3.RELEASE'
+}

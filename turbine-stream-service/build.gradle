@@ -1,0 +1,9 @@
+
+description = 'turbine-stream-service'
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-turbine-stream', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit', version:'2.0.0.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.0.3.RELEASE'
+}

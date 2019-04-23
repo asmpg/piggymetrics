@@ -1,0 +1,20 @@
+rootProject.name = 'piggymetrics'
+include ':config'
+include ':monitoring'
+include ':registry'
+include ':gateway'
+include ':auth-service'
+include ':account-service'
+include ':statistics-service'
+include ':notification-service'
+include ':turbine-stream-service'
+
+project(':config').projectDir = "$rootDir/config" as File
+project(':monitoring').projectDir = "$rootDir/monitoring" as File
+project(':registry').projectDir = "$rootDir/registry" as File
+project(':gateway').projectDir = "$rootDir/gateway" as File
+project(':auth-service').projectDir = "$rootDir/auth-service" as File
+project(':account-service').projectDir = "$rootDir/account-service" as File
+project(':statistics-service').projectDir = "$rootDir/statistics-service" as File
+project(':notification-service').projectDir = "$rootDir/notification-service" as File
+project(':turbine-stream-service').projectDir = "$rootDir/turbine-stream-service" as File

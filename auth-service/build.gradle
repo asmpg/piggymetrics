@@ -1,0 +1,14 @@
+
+description = 'auth-service'
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version:'2.0.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version:'2.0.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-oauth2', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'2.0.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version:'2.0.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version:'2.0.0.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.0.3.RELEASE'
+    testCompile group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo', version:'1.50.3'
+    testCompile group: 'com.jayway.jsonpath', name: 'json-path', version:'2.2.0'
+}
